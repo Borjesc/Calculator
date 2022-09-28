@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">button{</p>
+<p class="p1">width:50px;</p>
+<p class="p1">height:50px;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">function displayValues(n)</p>
+<p class="p1">{</p>
+<p class="p1">if (n=='=')</p>
+<p class="p1">{</p>
+<p class="p1">ans = eval(document.getElementById("Answer").value);</p>
+<p class="p1">document.getElementById("Answer").value=ans;</p>
+<p class="p1">}</p>
+<p class="p1">else if(n=='C')</p>
+<p class="p1">{</p>
+<p class="p1">document.getElementById("Answer").value="";</p>
+<p class="p1">}</p>
+<p class="p1">else</p>
+<p class="p1">{</p>
+<p class="p1">document.getElementById("Answer").value+=n;</p>
+<p class="p1">}</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;title&gt;Calculator&lt;/title&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;table border=10 style="width:20%" align ="center" bgcolor="grey"&gt;</p>
+<p class="p1">&lt;tr&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;td colspan="4"&gt;&lt;input type=text id="Answer" style="width:98%"/&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="1" onClick="javascript:displayValues('1')" &gt;1&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="2" onClick="javascript:displayValues('2')"&gt;2&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="3" onClick="javascript:displayValues('3')"&gt;3&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="+" onClick="javascript:displayValues('+')"&gt;+&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="4" onClick="javascript:displayValues('4')"&gt;4&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="5" onClick="javascript:displayValues('5')"&gt;5&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="6" onClick="javascript:displayValues('6')"&gt;6&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="-" onClick="javascript:displayValues('-')"&gt;-&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;tr&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="7" onClick="javascript:displayValues('7')"&gt;7&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="8" onClick="javascript:displayValues('8')"&gt;8&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="9" onClick="javascript:displayValues('9')"&gt;9&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="*" onClick="javascript:displayValues('*')"&gt;*&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;tr&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="c" onClick="javascript:displayValues('C')"&gt;C&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="0" onClick="javascript:displayValues('0')"&gt;0&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="=" onClick="javascript:displayValues('=')"&gt;=&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;td align="center"&gt;&lt;button id="/" onClick="javascript:displayValues('/')"&gt;/&lt;/button&gt;&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;html&gt;</p>
+</body>
+</html>
